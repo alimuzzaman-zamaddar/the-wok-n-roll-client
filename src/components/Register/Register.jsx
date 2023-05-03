@@ -7,6 +7,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 const Register = () => {
     const {createUser,updateUserProfile} =useContext(AuthContext)
     const [loginUser,setLoginUser] =useState(null)
+    const [userError,setUserError] = useState('')
     const handleRegister = (event) => {
         event.preventDefault()
         const form = event.target;
@@ -15,6 +16,7 @@ const Register = () => {
         const email = form.email.value;
         const password =form.password.value;
         console.log(name,photo,email,password)
+
         createUser(email,password)
         .then(result => {
             const loggedUser = result.user;
@@ -31,6 +33,7 @@ const Register = () => {
         })
         .catch(error => {
             console.log(error.message)
+            setUserError(error.message)
         })
 
     }
@@ -60,6 +63,7 @@ const Register = () => {
             required
           />
         </Form.Group>
+        <p className="text-danger">{userError}</p>
         <Button variant="primary" type="register">
           Register
         </Button>
