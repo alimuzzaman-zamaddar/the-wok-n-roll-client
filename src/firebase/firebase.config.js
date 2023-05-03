@@ -4,13 +4,14 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+console.log('envirments vareable is working',import.meta.env.VITE_APIKEY)
 const firebaseConfig = {
-  apiKey: "AIzaSyDukG-8m4a7lYCnNnbjhkYg_72zF8RJ5ns",
-  authDomain: "the-wok-n-roll-recipe.firebaseapp.com",
-  projectId: "the-wok-n-roll-recipe",
-  storageBucket: "the-wok-n-roll-recipe.appspot.com",
-  messagingSenderId: "422220659513",
-  appId: "1:422220659513:web:ba8bebc68c81192e7106e8"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
