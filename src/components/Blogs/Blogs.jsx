@@ -12,7 +12,6 @@ const Blogs = () => {
       <Accordion ref={ref} className="py-lg-5" defaultActiveKey="0" flush>
         <Accordion.Item eventKey="0">
           <Accordion.Header>
-            {" "}
             <h3>
               1.What are the differences between uncontrolled and controlled
               components?
@@ -70,7 +69,6 @@ const Blogs = () => {
         <Accordion.Item eventKey="3">
           <Accordion.Header>
             <h3>
-              {" "}
               4.What is a custom hook, and why will you create a custom hook?
             </h3>
           </Accordion.Header>
