@@ -28,9 +28,7 @@ const Blogs = () => {
            
 
             <h3>2.How to validate React props using PropTypes?</h3>
-          </Accordion.Header>
-          <Accordion.Body>
-            When developing a react application, you all need to structure and
+            <p>  When developing a react application, you all need to structure and
             define your props to avoid bugs and errors. Just like a function
             might have mandatory arguments, a React component might require a
             prop to be defined, otherwise, it will not render properly.
@@ -38,11 +36,9 @@ const Blogs = () => {
             could cause your app to behave unexpectedly.To pass props between
             components, you can add them when the component is called, just like
             you would pass arguments when calling on a regular JavaScript
-            function.
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="2">
-          <Accordion.Header>
+            function.</p>
+          
+
             <h3>3.What are the difference between nodejs and express js?</h3>
           </Accordion.Header>
           <Accordion.Body>
