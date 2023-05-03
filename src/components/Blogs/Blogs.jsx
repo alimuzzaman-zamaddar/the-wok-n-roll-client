@@ -4,18 +4,22 @@ import Pdf from "react-to-pdf";
 const ref = React.createRef();
 const Blogs = () => {
   return (
-    <Container className="bg-dark">
-      <Pdf targetRef={ref} filename="blogs.pdf">
+    <Container>
+      <Pdf targetRef={ref} filename="blog.pdf">
         {({ toPdf }) => <button onClick={toPdf}>Generate Pdf</button>}
       </Pdf>
 
-
+      <Accordion ref={ref} className="py-lg-5" defaultActiveKey="0" flush>
+        <Accordion.Item eventKey="0">
+          <Accordion.Header>
+            {" "}
             <h3>
               1.What are the differences between uncontrolled and controlled
               components?
             </h3>
-
-            <p> In react, controlled components refer to components that have their
+          </Accordion.Header>
+          <Accordion.Body>
+            In React, controlled components refer to components that have their
             state and behavior controlled by the parent component. These
             components rely on props passed down from the parent component to
             update their state and behavior. Uncontrolled components refer to
@@ -24,11 +28,15 @@ const Blogs = () => {
             behavior controlled by the parent component. These components rely
             on props passed down from the parent component to update their state
             and behavior. Uncontrolled components refer to components that
-            manage their own state internally.</p>
-           
-
+            manage their own state internally.
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="1">
+          <Accordion.Header>
             <h3>2.How to validate React props using PropTypes?</h3>
-            <p>  When developing a react application, you all need to structure and
+          </Accordion.Header>
+          <Accordion.Body>
+            When developing a react application, you all need to structure and
             define your props to avoid bugs and errors. Just like a function
             might have mandatory arguments, a React component might require a
             prop to be defined, otherwise, it will not render properly.
@@ -36,12 +44,15 @@ const Blogs = () => {
             could cause your app to behave unexpectedly.To pass props between
             components, you can add them when the component is called, just like
             you would pass arguments when calling on a regular JavaScript
-            function.</p>
-          
-
+            function.
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="2">
+          <Accordion.Header>
             <h3>3.What are the difference between nodejs and express js?</h3>
-
-            <p>Use Cases of NodeJS This section analyses some various types of apps
+          </Accordion.Header>
+          <Accordion.Body>
+            Use Cases of NodeJS This section analyses some various types of apps
             that can be built using this framework. When hiring, a NodeJS
             developers resume should have instances of contributing to the
             development of some of these applications. rendering for SPA As a
@@ -53,12 +64,17 @@ const Blogs = () => {
             HTTP requests to stream data from the client to the server and vice
             versa, without having to buffer the information in the memory
             beforehand, making it a perfect fit for media streaming platforms.
-            just well.</p>
-
+            just well.
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="3">
+          <Accordion.Header>
             <h3>
+              {" "}
               4.What is a custom hook, and why will you create a custom hook?
             </h3>
-            <p>
+          </Accordion.Header>
+          <Accordion.Body>
             Custom React JS hooks offer reusability as when a custom hook is
             created, it can be reused easily, which makes the code cleaner and
             reduces the time to write the code. It also enhances the rendering
@@ -68,7 +84,10 @@ const Blogs = () => {
             easily, which makes the code cleaner and reduces the time to write
             the code. It also enhances the rendering speed of the code as a
             custom hook does not need to be rendered again and again while
-            rendering the whole code.</p>
+            rendering the whole code.
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
     </Container>
   );
 };
