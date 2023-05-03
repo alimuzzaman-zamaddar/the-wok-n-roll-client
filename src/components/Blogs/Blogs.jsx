@@ -14,8 +14,7 @@ const Blogs = () => {
               1.What are the differences between uncontrolled and controlled
               components?
             </h3>
-          </Accordion.Header>
-          <Accordion.Body>
+
             <p> In react, controlled components refer to components that have their
             state and behavior controlled by the parent component. These
             components rely on props passed down from the parent component to
@@ -27,10 +26,7 @@ const Blogs = () => {
             and behavior. Uncontrolled components refer to components that
             manage their own state internally.</p>
            
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>
+
             <h3>2.How to validate React props using PropTypes?</h3>
           </Accordion.Header>
           <Accordion.Body>
