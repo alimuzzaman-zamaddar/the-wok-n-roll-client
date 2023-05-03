@@ -1,0 +1,46 @@
+.container-cards-buttom{
+    display: flex;
+    justify-content: space-around;
+
+}
+.title-fish{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.fish-cards{
+    width: 28%;
+    text-align: center;
+    color: white;
+    box-shadow: 8px 8px 20px 20px rgb(24, 32, 123);
+    padding: 20px;
+    background: transparent;
+    border-radius: 0px 59px 0px 59px;
+    transition: .5s;
+
+}
+.fish-cards h3{
+    margin: 30px 0px;
+}
+.fish-cards img{
+    width: 100%;
+    border-radius: 0px 59px 0px 59px;
+}
+.fish-cards:hover{
+    box-shadow: 16px 16px 30px 30px rgb(74, 87, 233);
+
+    
+}
+
+@media only screen and (max-width: 576px){
+    .container-cards-buttom{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .fish-cards{
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+}

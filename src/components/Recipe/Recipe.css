@@ -1,0 +1,31 @@
+.chefCard img {
+  width: 100%;
+  border-radius: 10px;
+  height: 300px;
+}
+.chefCard {
+  margin: 20px;
+  padding: 20px;
+  background: rgb(2, 0, 36);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(16, 16, 29, 1) 0%,
+    rgba(31, 42, 57, 1) 18%,
+    rgba(52, 128, 198, 1) 100%,
+    rgba(99, 161, 183, 1) 100%,
+    rgba(53, 186, 223, 1) 100%,
+    rgba(6, 81, 168, 1) 100%,
+    rgba(110, 158, 188, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 10px;
+  color: white;
+}
+@media only screen and (max-width: 576px){
+  .chefCard img{
+    width: 435px;
+    
+  }
+}
