@@ -22,6 +22,7 @@ const Register = () => {
             const loggedUser = result.user;
             console.log(loggedUser)
             setLoginUser(loggedUser)
+            setUserError('')
             updateUserProfile({
               displayName: name,
               photoURL:photo
