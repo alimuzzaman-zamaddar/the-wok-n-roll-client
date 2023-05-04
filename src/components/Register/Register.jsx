@@ -63,7 +63,7 @@ const Register = () => {
             required
           />
         </Form.Group>
-        <p className="text-danger">{userError}</p>
+        <h5 className="text-danger">{userError}</h5>
         <Button variant="primary" type="register">
           Register
         </Button>
