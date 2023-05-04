@@ -33,7 +33,7 @@ const Login = () => {
   const handleGithub = () => {
     signInWithPopup(auth, githubProvider)
       .then((result) => {
-        console.loh(result.user);
+        console.log(result.user);
         setLoginUser(result.user);
       })
       .catch((error) => console.log(error));
